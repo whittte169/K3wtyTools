@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>K3wtyTools — Plugin Registry</title>
+  <meta name="description" content="Plugins for PaperMC, PurpurMC, Nukkit-MOT, EndstoneMC and PumpkinMC. Direct downloads from GitHub Releases.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="#top"><span class="mark" aria-hidden="true"></span>K3wtyTools</a>
+    <div class="links">
+      <a href="#cores-section">Cores</a>
+      <a href="#plugins-section">Plugins</a>
+      <a href="#utils-section">Tools</a>
+      <a id="gh" class="gh" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </nav>
+  <div class="ticker" aria-hidden="true"><div id="ticker" class="track"></div></div>
+  <header id="top" class="hero">
+    <div class="hero-text">
+      <p class="label">The K3wty plugin registry</p>
+      <h1>Pick your core.<br>Drop in the jar.</h1>
+      <p class="lead">Plugins for PaperMC, PurpurMC, Nukkit-MOT, EndstoneMC and PumpkinMC. Filter by core and download straight from GitHub Releases.</p>
+      <div class="search">
+        <input id="search" type="search" placeholder="Search plugins" aria-label="Search plugins" autocomplete="off">
+        <kbd>Ctrl K</kbd>
+      </div>
+      <div class="popular"><span>Popular:</span><div id="popular"></div></div>
+      <div id="tool-links" class="tool-links"></div>
+      <dl class="stats">
+        <div><dt>Plugins</dt><dd id="stat-plugins">0</dd></div>
+        <div><dt>Cores</dt><dd id="stat-cores">0</dd></div>
+        <div><dt>Source</dt><dd>GitHub</dd></div>
+      </dl>
+    </div>
+    <div class="term" aria-label="Download command preview">
+      <div class="term-bar"><i></i><i></i><i></i><span>terminal</span></div>
+      <pre id="term"></pre>
+    </div>
+  </header>
+  <main>
+    <section id="cores-section" class="section">
+      <p class="label">// 01 — choose a core</p>
+      <h2>Server core</h2>
+      <div id="cores" class="cores" role="group" aria-label="Server core selection"></div>
+    </section>
+    <section id="plugins-section" class="section">
+      <div class="row">
+        <div>
+          <p class="label">// 02 — pick a plugin</p>
+          <h2>Plugins</h2>
+        </div>
+        <div id="count" class="count"></div>
+      </div>
+      <div id="plugins" class="grid"></div>
+      <div id="empty" class="empty" hidden>No plugins for this core yet. Try another core.</div>
+    </section>
+    <section id="utils-section" class="section">
+      <p class="label">// 03 — utilities</p>
+      <h2>Useful tools</h2>
+      <div id="utils" class="utils"></div>
+    </section>
+    <section class="section">
+      <p class="label">// the workflow</p>
+      <h2>Three steps to a running plugin</h2>
+      <ol class="steps">
+        <li><span>01</span><h3>Select a core</h3><p>Choose the server software you run and the list narrows to compatible plugins.</p></li>
+        <li><span>02</span><h3>Pick a plugin</h3><p>Every card shows the current version and the cores it supports.</p></li>
+        <li><span>03</span><h3>Download</h3><p>The button links straight to the file in the GitHub Release. Drop it into your plugins folder.</p></li>
+      </ol>
+    </section>
+  </main>
+  <footer class="foot">
+    <span>K3wtyTools © 2026 — Open source.</span>
+    <a id="gh2" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
