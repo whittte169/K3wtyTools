@@ -13,7 +13,6 @@ const CONFIG = {
     }
   ],
   cores: [
-    { id: "PaperMC", color: "#ff4d6d" },
     { id: "PurpurMC", color: "#b45cff" },
     { id: "Nukkit-MOT", color: "#00f0ff" },
     { id: "EndstoneMC", color: "#f4f06a" },
