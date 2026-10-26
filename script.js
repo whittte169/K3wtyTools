@@ -56,7 +56,7 @@ const el = (tag, cls, text) => {
 };
 const repoBase = p => `https://github.com/${p.owner || CONFIG.owner}/${p.repo}/releases`;
 const fileOf = (p, core) => ((p.files && core && p.files[core]) || p.file).replaceAll("{version}", p.version);
-const downloadUrl = (p, core) => `${repoBase(p)}/${p.tag}/`;
+const downloadUrl = (p, core) => `${repoBase(p)}/download/${encodeURIComponent(p.tag)}/${encodeURIComponent(fileOf(p, core))}`;
 const releaseUrl = p => `${repoBase(p)}/tag/${p.tag}`;
 const visible = () => CONFIG.plugins.filter(p =>
   (!state.core || p.cores.includes(state.core)) &&
@@ -110,6 +110,7 @@ const renderCard = p => {
   const actions = el("div", "actions");
   const dl = el("a", "btn", "Download");
   dl.href = downloadUrl(p, state.core);
+  dl.setAttribute("download", fileOf(p, state.core));
   dl.rel = "noopener";
   actions.append(dl);
   const rel = el("a", "btn alt", "Release");
