@@ -32,8 +32,8 @@ const CONFIG = {
       name: "K3wtyEconomy",
       repo: "K3wtyEconomy",
       tag: "endstone",
-      version: "1.0.1",
-      file: "endstone_k3wty_economy-1.0.1-py2.py3-none-any.whl",
+      version: "1.0.0",
+      file: "endstone_k3wty_economy-1.0.0-py2.py3-none-any.whl",
       description: "Economy with balances, a shop and player-to-player transfers.",
       cores: ["EndstoneMC"]
     }
