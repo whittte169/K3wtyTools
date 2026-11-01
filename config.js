@@ -21,6 +21,12 @@ const CONFIG = {
       images: [],
       versions: [
         {
+          version: "1.0.2",
+          cores: {
+            "Nukkit-MOT": { tag: "nukkit-1.0.2", file: "k3wtychatmanager-{version}.jar" }
+          }
+        },
+        {
           version: "1.0.1",
           cores: {
             "Nukkit-MOT": { tag: "nukkit-1.0.1", file: "k3wtychatmanager-{version}.jar" }
