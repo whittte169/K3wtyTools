@@ -21,15 +21,15 @@ const CONFIG = {
       images: [],
       versions: [
         {
-          version: "1.0.0",
-          cores: {
-            "Nukkit-MOT": { tag: "nukkit-1.0.0", file: "ChatManagerSystem-{version}.jar" }
-          }
-        },
-        {
           version: "1.0.1",
           cores: {
             "Nukkit-MOT": { tag: "nukkit-1.0.1", file: "k3wtychatmanager-{version}.jar" }
+          }
+        },
+        {
+          version: "1.0.0",
+          cores: {
+            "Nukkit-MOT": { tag: "nukkit-1.0.0", file: "ChatManagerSystem-{version}.jar" }
           }
         }
       ]
@@ -49,7 +49,7 @@ const CONFIG = {
         {
           version: "1.0.0",
           cores: {
-            EndstoneMC: { tag: "endstone", file: "endstone_k3wty_economy-{version}-py2.py3-none-any.whl" }
+            EndstoneMC: { tag: "endstone-1.0.0", file: "endstone_k3wty_economy-{version}-py2.py3-none-any.whl" }
           }
         }
       ]
