@@ -23,7 +23,13 @@ const CONFIG = {
         {
           version: "1.0.0",
           cores: {
-            "Nukkit-MOT": { tag: "plugin", file: "ChatManagerSystem-{version}.jar" }
+            "Nukkit-MOT": { tag: "nukkit-1.0.0", file: "ChatManagerSystem-{version}.jar" }
+          }
+        },
+        {
+          version: "1.0.1",
+          cores: {
+            "Nukkit-MOT": { tag: "nukkit-1.0.1", file: "k3wtychatmanager-{version}.jar" }
           }
         }
       ]
