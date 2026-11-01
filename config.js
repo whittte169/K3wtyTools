@@ -53,6 +53,12 @@ const CONFIG = {
       images: [],
       versions: [
         {
+          version: "1.0.1",
+          cores: {
+            EndstoneMC: { tag: "endstone-1.0.1", file: "endstone_k3wty_economy-{version}-py2.py3-none-any.whl" }
+          }
+        },
+        {
           version: "1.0.0",
           cores: {
             EndstoneMC: { tag: "endstone-1.0.0", file: "endstone_k3wty_economy-{version}-py2.py3-none-any.whl" }
